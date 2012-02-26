@@ -1,0 +1,20 @@
+/* 
+    Document   : customstyles
+    Created on : Oct 23, 2011, 8:15:42 PM
+    Author     : ZodiacDM
+    Description:
+        This file will be included in the viewing of your html pages, though
+	    will not be available or have any effect on the TinyMCE wysiwyg editor
+
+	This file should essentially only be used if you disable the TinyMCE editor
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+

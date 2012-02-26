@@ -1,0 +1,70 @@
+/*
+    Document   : aboutus
+    Created on : Oct 11, 2011, 5:30:33 PM
+    Author     : ZodiacDM
+    Description:
+        This is the main stylesheet for the Fancy Pages application.
+		This is included in all custom pages, and pertains mostly to small
+			style fixes in attempt to maintain consistency around the site.
+*/
+
+/*
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+ul.PanelInfo li {
+	overflow: hidden;
+}
+ul.PanelInfo li a.Action,
+ul.PanelInfo li.Depth:hover a.Action{
+	color: #090;
+	float: right;
+	margin: 0 1px;
+	padding: 4px 4px 0;
+	height: 13px;
+	font-size: 10px;
+	line-height: 10px;
+}
+div.Tabs li a.Tablink {
+	margin: 3px;
+}
+/*--------------------------------- Edit Page Page ---------------------------*/
+div.EditButtons {
+	position: relative;
+}
+div.EditButtons span.SettingsButton {
+	position: absolute;
+	right: 0px;
+	top: -10px;
+	background: url('images/settings.png') no-repeat center 14px #232323;
+	min-width: 56px;
+	min-height: 56px;
+	padding: 2px;
+	margin: 5px;
+	border-radius: 28px;
+	-moz-border-radius: 28px;
+	-webkit-border-radius: 28px;
+	box-shadow: 0 0px 5px #333;
+	-moz-box-shadow: 0 0px 5px #333;
+	-webkit-box-shadow: 0 0px 5px #333;
+	z-index: 90;
+}
+div.EditButtons span.SettingsButton:hover,
+div.EditButtons span.Open {
+	cursor: pointer;
+	box-shadow: 0 0px 7px #111;
+	-moz-box-shadow: 0 0px 7px #111;
+	-webkit-box-shadow: 0 0px 7px #111;
+}
+div#FancyPage {
+	margin-top: 10px;
+	min-height: 100px;
+}
+ul.SettingsButtons {
+	margin: 50px 5px 20px;
+	right: 5px;
+}
+ul.SettingsButtons a {
+	color: whitesmoke;
+	font-weight: bold;
+}

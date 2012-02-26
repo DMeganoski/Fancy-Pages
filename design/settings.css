@@ -1,0 +1,208 @@
+/*
+    Document   : settings
+    Created on : Oct 11, 2011, 5:30:33 PM
+    Author     : ZodiacDM
+    Description:
+        This is the stylesheet for the dashboard pages of the Fancy Pages application.
+*/
+
+/*
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+#Body #Panel div.Information h4 {
+    background: url('images/dashboard_header.png') 158px 2px no-repeat;
+}
+/* TODO down the line... change the image for the home page default
+ * Isn't Usable right now anyways
+*/
+.HomeOptions a.info {
+    /*background: url('') no-repeat center center;*/
+}
+/*--------------------------------- Edit Page Page ---------------------------*/
+h1.AddPage a.Button {
+    float: right;
+    position: relative;
+    top: -5px;
+}
+/*--------- Rules --------------*/
+ul.Rules {
+    position: absolute;
+    right: 0px;
+    background: #FBF7AA;
+    width: 250px;
+    margin: 10px 15px 0 0;
+    padding: 10px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+ul.Rules li.Rules {
+    background: ivory;
+    position: relative;
+    left: 10px;
+    width: 100%;
+    padding: 5px;
+    margin: 10px;
+    color: dimgrey;
+    text-align: center;
+    list-style: outside;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+}
+/*----------- Input Elements ----------*/
+textarea.Form_HTML {
+    width: 600px;
+    height: 300px;
+}
+input.DateBox, input.InputBox, input.SmallInput, textarea {
+    font-family: 'lucida grande','Lucida Sans Unicode', tahoma, sans-serif;
+    color: #333;
+    font-size: 15px;
+    padding: 3px;
+    margin: 0;
+    width: 100%;
+    border: 1px solid #AAA;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+table#NewPage {
+    width: 665px;
+    position: relative;
+    display: inline;
+}
+form#Form_InfoPages {
+    width: 100%;
+    position: relative;
+}
+form#Form_InfoPages th {
+    text-align: left;
+}
+form#Form_InfoPages td.uri label {
+    color: #AAA;
+    padding-left: 16px;
+}
+form#Form_InfoPages input {
+    text-align: left;
+}
+form#Form_InfoPages input#Form_Title,
+form#Form_InfoPages input#Form_Description {
+    width: 340px;
+}
+form#Form_InfoPages input#Form_Slug {
+    width: 225px;
+}
+/*------------ HTML Box -----------*/
+form#Form_InfoPages div.HTMLBox a.Button {
+    float: left;
+    margin: 5px;
+}
+form#Form_InfoPages div.HTMLBox {
+    float: left;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+form#Form_InfoPages div.HTMLBox label {
+    font-weight: bold;
+    font-size: 15px;
+    display: inline-block;
+}
+form#Form_InfoPages textarea#Form_HTML {
+    display: block;
+    min-height: 550px;
+    width: 695px;
+    max-width: 695px;
+    max-height: none;
+    margin-bottom: 20px;
+}
+form#Form_InfoPages div.ButtonWrapper {
+    width: 400px;
+    float: left;
+    padding: 10px 0;
+}
+form#Form_InfoPages div.CancelSpacer {
+    width: 220px;
+}
+form#Form_InfoPages div.Buttons {
+    display: inline;
+}
+form#Form_InfoPages input#Form_Reset,
+form#Form_InfoPages a.Cancel,
+form#Form_InfoPages input#Form_Save {
+    float: left;
+}
+form#Form_InfoPages a.Cancel {
+    margin: 0px 20px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background: #3FBCF3;
+    background: -webkit-gradient(linear, center bottom, center top, from(#3FBCF3), to(#AEE7FE));
+    background: -moz-linear-gradient(top, #AEE7FE, #3FBCF3);
+    -pie-background: linear-gradient(top, #aee7fe, #3fbcf3);
+    background: linear-gradient(top, #AEE7FE, #3FBCF3);
+    border: 1px solid #0F7FE6;
+    color: #003673;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 10px 4px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #B7F5FD;
+    float: left;
+}
+form#Form_InfoPages a.Cancel:hover {
+    box-shadow: 0px 0px 2px #333;
+    -moz-box-shadow: 0px 0px 2px #333;
+    -webkit-box-shadow: 0px 0px 2px #333;
+}
+/*--------------------------- Manage Pages Page ------------------------------*/
+h1.ClearRight {
+    clear: none;
+}
+
+ol.Pages {
+    margin: 0;
+}
+.Pages li {
+    background: #F3F3F3;
+    margin: 0;
+    overflow: hidden;
+}
+.Pages li.Page {
+    padding: 5px 10px;
+    border-bottom: 1px solid #8BC1DE;
+}
+.Pages li.SubPage {
+    padding: 5px 10px;
+    margin-left: 30px;
+    border-bottom: 1px solid #8BC1DE;
+    border-left: 1px solid #8BC1DE;
+    background: whitesmoke;
+}
+.Pages li.Dragging {
+    box-shadow: 0 2px 3px #999;
+    -moz-box-shadow: 0 2px 3px #999;
+    -webkit-box-shadow: 0 2px 3px #999;
+}
+.Pages li.Hovered {
+    border: 3px solid #F1D031;
+}
+ol.Pages h2 {
+    text-align: left;
+    width: auto;
+}
+.Pages blockquote {
+    display: block;
+    height: 30px;
+}
+ol.Pages a.SmallButton,
+ol.SubPages a.SmallButton {
+    float: right;
+}
+/* Widget Box and styles are in a seperate file */
